@@ -1,12 +1,12 @@
 mysql_root_password: stagingpw
 
 wordpress_sites:
-  example.com:
+  35staging.krakatoa.io:
     site_hosts:
-      - staging.example.com
+      - 35staging.krakatoa.io
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:roots/bedrock.git
-    branch: master
+    repo: git@github.com:35denton/35sixteen.git
+    branch: theme
     # subtree: site # Use this if following the roots-example-project structure
     multisite:
       enabled: false
@@ -18,8 +18,8 @@ wordpress_sites:
       duration: 30s
     system_cron: true
     env:
-      wp_home: http://staging.example.com
-      wp_siteurl: http://staging.example.com/wp
+      wp_home: http://35staging.krakatoa.io
+      wp_siteurl: http://35staging.krakatoa.io/wp
       wp_env: staging
       db_name: example_staging
       db_user: example_dbuser

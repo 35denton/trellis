@@ -5,7 +5,7 @@ wordpress_sites:
     site_hosts:
       - example.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:roots/bedrock.git
+    repo: git@github.com:35denton/35sixteen.git
     branch: master
     # subtree: site # Use this if following the roots-example-project structure
     multisite:
